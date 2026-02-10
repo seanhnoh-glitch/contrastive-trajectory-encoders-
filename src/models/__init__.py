@@ -1,7 +1,7 @@
 """Neural network models for encoders and policies"""
 
 from .encoders import LSTMEncoder, TransformerEncoder
-from .policies import ContextConditionalPolicy, ContextEncoder
+from .policies import ContextConditionalPolicy, ContextEncoder, LoopedContextPolicy
 from .losses import InfoNCELoss, SupConLoss, TripletLoss
 
 __all__ = [
@@ -9,6 +9,7 @@ __all__ = [
     "TransformerEncoder",
     "ContextConditionalPolicy",
     "ContextEncoder",
+    "LoopedContextPolicy",
     "InfoNCELoss",
     "SupConLoss",
     "TripletLoss",
